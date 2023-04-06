@@ -1,0 +1,549 @@
+/* Mobile layout */
+body {
+    background: rgb(243,221,224);
+    text-align: center;
+    font-family: "Annai MN";
+    color: rgb(33,55,98);
+    display: grid;
+    grid-template-columns: 275px auto;
+    grid-template-rows: 450px 100px 1100px 60px;
+    grid-template-areas:
+        "head head"
+        "nav nav"
+        "main main"
+        "foot foot";
+}
+
+.changeNavGray {
+    background: rgb(58, 58, 58);
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+.changeSideBarGray {
+    background: rgb(58, 58, 58);
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+.changeMainGray {
+    background: rgb(187, 187, 187);
+    border: 2px rgb(255,255,255) solid;
+}
+
+.changeNavSun{
+    background: rgb(235, 144, 145);
+    border: 2px rgb(152, 95, 96) solid;
+}
+
+.changeSideBarSun {
+    background: rgb(196, 106, 124);
+    border: 2px rgb(161, 86, 101) solid;
+}
+
+.changeMainSun {
+    background: rgb(252, 219, 169);
+    border: 2px rgb(255,255,255) solid;
+}
+
+header{
+    grid-area: head;
+}
+
+header logo{
+    width: 600px;
+    height: 250px;
+}
+
+nav{
+    grid-area: nav;
+    background: rgb(190,231,245);
+    border: 2px rgb(162,194,231) solid;
+    font-size: 30pt;
+    padding: 15px;
+}
+
+nav a{
+    color: rgb(33,55,98);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: rgb(162,194,231);
+}
+
+sidebar {
+    display: none;
+}
+
+
+main{
+    grid-area: main;
+    background: rgb(236,236,236);
+    border: 2px rgb(255,255,255) solid;
+    font-size: 30pt;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+main, h1 + p, h2 ~ p{
+    text-align: left;
+    overflow: auto;
+}
+
+footer{
+    grid-area: foot;
+    font-size: 10pt;
+    padding: 15px;
+}
+
+* ul{
+    list-style-type: "〉 ";
+    color: rgb(33,55,98);
+}
+
+#plays, #music, #Little_about, div{
+    display: inline-block;
+}
+
+#plays li, #music li.songs, #Little_about img, #contactForm, buttons{
+    float: left;
+    clear: both;
+}
+
+#Little_about p, header socials{
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.sidePictureSlime {
+    float: none;
+    width: 400px;
+    height: 520px;
+}
+
+
+#Little_about img{
+    padding-right: 15px;
+}
+
+td, th, table {
+    border: 3px solid rgb(209, 209, 209);
+    border-collapse: collapse;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+th {
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+#validate{
+    width: 200px;
+    background-color: rgb(243,221,224);
+    color: rgb(33,55,98);
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px black solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+textarea{
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+div{
+    text-align: center;
+}
+
+
+#Little_about img{
+    float: none;
+    width: 900px;
+    height: 600px;
+}
+
+#Little_about img{
+    padding-right: 15px;
+}
+
+#pinkButton {
+    width: 150px;
+    height: 75px;
+    font-size: 30pt;
+    background-color: rgb(224, 171, 180);
+    color: rgb(33,55,98);
+    font-family: "Annai MN";
+    padding: 7.5px;
+    border: 1px black solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#grayButton {
+    width: 150px;
+    height: 75px;
+    font-size: 30pt;
+    background-color: rgb(185, 185, 185);
+    color: rgb(0, 0, 0);
+    font-family: "Annai MN";
+    padding: 7.5px;
+    border: 1px black solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+#sunsetButton {
+    width: 150px;
+    height: 75px;
+    font-size: 30pt;
+    background-color: rgb(225, 144, 86);
+    color: rgb(58, 37, 10);
+    font-family: "Annai MN";
+    padding: 7.5px;
+    border: 1px black solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+#journal, #Adam, #slime, #sortie, #song, #pieces, #Dahrana, #Interlude {
+    cursor: pointer;
+    color: #c9bce8;
+}
+
+div.gallery {
+    margin-left: 60px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 800px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#firstName, #lastName{
+    width: 100px;
+    border:none;
+    border-radius: 15px;
+    height: 20px;
+    border:none;
+    border-radius: 10px;
+    padding: 5px
+}
+
+.sideVideo{
+    float: none;
+    width: 385px;
+    height: 750px;
+}
+
+#emailAddress {
+    width: 300px;
+    height: 20px;
+    border:none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+buttons{
+    white-space: pre;
+}
+socials {
+    white-space: pre;
+}
+#YouTubeId{
+    width: 120px;
+    height: 90px;
+}
+#FacebookId{
+    width: 90px;
+    height: 90px;
+}
+#TwitterId {
+    width: 80px;
+    height: 80px;
+}
+#InstagramId {
+    width: 90px;
+    height: 90px;
+}
+
+#firstName, #lastName{
+    width: 200px;
+    height: 50px;
+    font-size: 30pt;
+}
+#emailAddress {
+    height: 50px;
+    width: 600px;
+    font-size: 30pt;
+}
+#email {
+    width: 850px;
+    height: 200px;
+    margin-left: 20px;
+    font-size: 30pt;
+}
+#validate {
+    width: 300px;
+    height: 75px;
+    font-size: 30pt;
+}
+
+#video {
+    width: 840px;
+    height: 573px;
+}
+
+#YouTubeBigId {
+    width: 180px;
+    height: 158px;
+}
+#FacebookBigId, #InstagramBigId {
+    width: 150px;
+    height: 150px;
+}
+#TwitterBigId {
+    width: 165px;
+    height: 150px;
+}
+
+/* Tablet layout */
+@media screen and (min-width: 1000px){
+    buttons {
+        white-space: normal;
+    }
+    #pinkButton {
+        width: 100px;
+        height: 60px;
+        font-size: 20pt;
+    }
+    #grayButton {
+        width: 100px;
+        height: 60px;
+        font-size: 20pt;
+    }
+    #sunsetButton {
+        width: 100px;
+        height: 60px;
+        font-size: 20pt;
+    }
+    socials {
+        white-space: normal;
+    }
+    header logo{
+        margin-left: 50px;
+    }
+    main {
+        font-size: 20pt;
+    }
+    div.gallery {
+        width: 600px;
+        margin-left: 200px;
+    }
+    th {
+        font-size: 20pt;
+    }
+    #Little_about img {
+        width: 600px;
+        height: 400px;
+        padding-left: 150px;
+        padding-right: 400px;
+    }
+    #validate {
+        margin-bottom: 100px;
+    }
+}
+
+/* Desktop layout */
+@media screen and (min-width: 1200px){
+    body {
+        display: grid;
+        grid-template-columns: 275px auto;
+        grid-template-rows: 190px 70px 500px 60px;
+        grid-template-areas:
+        "head head"
+        "nav nav"
+        "sidebar main"
+        "foot foot";
+    }
+
+    header logo{
+        margin-left: 50px;
+    }
+
+    sidebar{
+        display: initial;
+        grid-area: sidebar;
+        background: rgb(219,206,255);
+        border: 2px rgb(184,164,236) solid;
+        font-size: 15pt;
+        text-align:left;
+    }
+
+    sidebar a{
+        text-decoration: none;
+        color: rgb(33,55,98);
+    }
+
+    sidebar a:hover, sidebar li:hover{
+        color: rgb(184,164,236);
+        list-style-type: "﹀ ";
+    }
+
+    sidebar li{
+        margin-bottom: 5px;
+    }
+
+    #pinkButton, #grayButton, #sunsetButton {
+        width: 65px;
+        height: auto;
+        font-size: 10pt;
+    }
+
+    #pinkButton:hover {
+        background-color: rgb(194, 150, 154);
+    }
+    #grayButton:hover {
+        background-color: rgb(148, 148, 148);
+    }
+    #sunsetButton:hover {
+        background-color: rgb(166, 117, 80);
+    }
+    #YouTubeId {
+        width: 52px;
+        height: 43px;
+    }
+    #FacebookId, #InstagramId {
+        width: 40px;
+        height: 40px;
+    }
+    #TwitterId {
+        width: 35px;
+        height: 35px;
+    }
+    nav {
+        font-size: 18pt;
+    }
+    main {
+        font-size: 13pt;
+    }
+    div.gallery {
+        width: 230px;
+        margin-left: 60px;
+    }
+    #Little_about img {
+        padding-left: 0px;
+        padding-right: 15px;
+        width: 450px;
+        height: 300px;
+        float: left;
+        clear: both;
+    }
+    th {
+        font-size: 13pt;
+    }
+    .sidePictureSlime {
+        width: 200px;
+        height: 260px;
+    }
+    .sidePictureSlime, .sideVideo, #Little_about p, #socialIcons{
+        float: right;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .sideVideo {
+        width: 154px;
+        height: 300px;
+    }
+    #video {
+        width: 560px;
+        height: 315px;
+    }
+
+    #firstName, #lastName{
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #emailAddress {
+        width: 300px;
+        height: 20px;
+        padding: 5px;
+        font-size: 13px;
+    }
+
+    #email {
+        width: initial;
+        height: initial;
+        font-size: initial;
+        margin: initial;
+    }
+    #validate {
+        width: 200px;
+        height: auto;
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    #YouTubeBigId {
+        width: 120px;
+        height: 105px;
+    }
+    #FacebookBigId, #InstagramBigId {
+        width: 100px;
+        height: 100px;
+    }
+    #TwitterBigId {
+        width: 110px;
+        height: 100px;
+    }
+    #socialIcons{
+        padding-left: 150px;
+    }
+}
+
+.splash{
+    cursor: pointer;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 95%;
+    width: 95%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(243,221,224);
+    transition: all ease-in-out 600ms;
+}
+.hidden{
+    transition: 0.5s;
+    display: none;
+}
+.splash-header {
+    height: 90%;
+    color: rgb(33,55,98);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    transition: background ease 0.5s;
+    transition: color ease 0.5s;
+}
